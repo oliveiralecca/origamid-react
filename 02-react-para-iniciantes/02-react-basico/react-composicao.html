@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React para Iniciantes</title>
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+    
+  <script type="text/babel">
+
+    // Criar componentes serve para podermos construir a interface com diversos componentes que podem ser reutilizados, um dentro do outro (ex: criar um botão padrão num componente separado, e reutilizá-lo por todo o site)
+   
+    const Button = () => {
+      return <button>Comprar</button>
+    }
+
+    const Titulo = () => {
+      const numero = Math.random() * 1000
+      return <h1>Meu Título {numero}</h1>
+    } // antes do retorno do componente pode colocar qualquer código JS que quiser
+
+    const App = () => {
+      return <div>Meu App
+        <Titulo/>
+        <Button/>
+        <div>
+          Compre aqui também.
+          <Button/>
+        </div>
+      </div>
+    }
+
+    ReactDOM.render(<App/>, document.getElementById('app'))
+
+  </script>
+</body>
+</html>

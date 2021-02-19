@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React para Iniciantes</title>
+
+  <!-- Carrega o React, React DOM e Babel -->
+  <!-- adiciona o React sem npm, e é recomendado apenas para testes rápidos e prototipagem -->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+    
+  <!-- Precisa indicar para o Babel que ele deve transformar o código -->
+  <script type="text/babel">
+
+    // Criando um componente/elemento de React: retorna JSX, por isso o Babel irá transformá-lo
+
+    function App() {
+      return <div>Meu App</div> // elemento
+    } // componente
+
+    // Renderiza o componente de React (<App/>), e onde será renderizado (elemento HTML que tiver id = app) 
+    
+    ReactDOM.render(<App/>, document.getElementById('app')) 
+  </script>
+</body>
+</html>

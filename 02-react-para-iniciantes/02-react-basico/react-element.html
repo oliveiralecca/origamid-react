@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React para Iniciantes</title>
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+    
+  <script type="text/babel">
+
+    // Todo elemento React é criado com a função .createElement(). O Babel é o responsável por transformar o elemento criado com JSX (que se parece com HTML) em funções de React.
+    
+    function App() {
+      return <div id="container">Meu App</div> // elemento react em JSX
+    }
+
+    // É transformado em:
+
+    function App() {
+      return React.createElement('div', { id: 'container' }, 'Meu App') // tag, atributos, conteúdo (que pode inclusive criar outros elementos, se tivesse uma tag dentro dessa, por exemplo)
+    }
+
+  </script>
+</body>
+</html>
