@@ -20,7 +20,7 @@ const Teste3 = () => {
 }
 
 const Teste = () => {
-  const active = false
+  const active = true
 
   if(active) {
     return <p>Teste Ativo</p>
