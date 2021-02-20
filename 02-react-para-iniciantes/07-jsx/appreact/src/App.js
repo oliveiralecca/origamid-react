@@ -49,7 +49,7 @@ const Caso5 = () => {
 }
 
 const Caso51 = () => {
-  return <p>Número ou  string aparece na tela = {10}</p>
+  return <p>Número, string e arrays (de num/str) aparecem na tela = {10}</p>
 }
 
 const Caso52 = () => {
