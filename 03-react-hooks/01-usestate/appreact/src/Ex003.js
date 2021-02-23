@@ -12,7 +12,7 @@ import Produto from './Produto'
   Mostre a mensagem carregando... enquanto o fetch é realizado
 */
 
-const Ex001 = () => {
+const Ex003 = () => {
   const [dados, setDados] = React.useState(null)
   const [carregando, setCarregando] = React.useState(null)
 
@@ -37,5 +37,5 @@ const Ex001 = () => {
   )
 }
 
-export default Ex001
+export default Ex003
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Ex003 from './Ex003';
+import Ex004 from './Ex004';
 
 ReactDOM.render(
   <React.StrictMode>
     {/*<App />*/}
-    <Ex003/>
+    <Ex004/>
   </React.StrictMode>,
   document.getElementById('root')
 );
