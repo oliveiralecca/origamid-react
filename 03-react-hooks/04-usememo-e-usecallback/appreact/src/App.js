@@ -60,7 +60,7 @@ const App = () => {
   const [contar, setContar] = React.useState(0)
 
   const handleClick = React.useCallback (() => {
-    setContar((contar) => contar + 1) // acessando o valor anterior, assim ele não será recriado toda vez que eu clicar no botão. se não acessar o valor anterior, ele depende do valor de contar que está fora dessa função [contar], ou seja, será recriado sempre que "contar" mudar
+    setContar((contar) => contar + 1) // acessando o valor anterior, assim ele não será recriado toda vez que eu clicar no botão. Se não acessar o valor anterior, ele depende do valor de contar que está fora dessa função [contar], ou seja, será recriado sempre que "contar" mudar
   }, [])
 
   return <button onClick={() => setContar(contar + 1)}>{contar}</button>
