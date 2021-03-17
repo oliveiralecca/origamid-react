@@ -4,6 +4,8 @@ import React from 'react';
   No input do tipo radio, comparamos o valor selecionado com o valor do input, dentro do atributo "checked". O que retornar true irá marcar o botão (definindo um "name" igual para cada grupo, não precisa disso).
 
   - Passando o "name" igual para todos os inputs criados, significa que são do mesmo grupo, portanto só um pode ser selecionado por vez.
+
+  - O "value" é estático.
 */
 
 const App = () => {
