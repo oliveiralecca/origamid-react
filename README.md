@@ -1,2 +1,2 @@
 # origamid-react
- Curso completo de React do zero, para o desenvolvimento de aplicações web reativas.
+Complete React course for the development of reactive web applications.
