@@ -1,0 +1,25 @@
+.container {
+  overflow: hidden; /* esconder tudo que ultrapassar o tamanho da tela */ 
+}
+
+.content {
+  display: flex; /* um item ao lado do outro */
+  transition: transform .3s ease;
+}
+
+.item {
+  flex-shrink: 0; /* não compactar meu item, deixá-lo do tamanho que indiquei (no caso, 80%) */
+  width: 80%;
+  margin: 0 10%;
+  padding: 10rem 0;
+  background: #eee;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 80%;
+}

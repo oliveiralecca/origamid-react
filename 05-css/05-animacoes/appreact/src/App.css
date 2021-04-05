@@ -1,0 +1,13 @@
+.animeLeft {
+  opacity: 0; /* escondido na tela */
+  transform: translateX(-20px); /* começa -20px pro lado */
+  animation: animeLeft .3s forwards; /* nome da animação, em quanto tempo deve ocorrer, forwards = ao final da animação o elemento fica em seu estado final */
+}
+
+/* criando a animação */
+@keyframes animeLeft {
+  to {
+    opacity: 1; /* 1 ou initial */
+    transform: initial; /* vai para 0 - valor inicial padrão */
+  }
+}
