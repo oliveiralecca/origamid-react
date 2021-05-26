@@ -1,0 +1,59 @@
+body {
+  margin: 2rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem); /* 10rem é a medida do footer, gerando sempre um scroll na página de contato que é mais "curta" */
+
+  /* centraliza a aplicação compacta no meio da tela */
+  max-width: 40rem;
+  margin: 0 auto;
+} 
+
+.content {
+  flex: 1;
+} /* o conteúdo sempre vai tentar se expandir ao máximo na página, deixando o footer lá embaixo */
+
+.animeLeft {
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeLeft .5s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-right-color: transparent;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}

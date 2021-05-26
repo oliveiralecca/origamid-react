@@ -1,0 +1,8 @@
+.footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #aaa;
+  height: 10rem;
+  padding-top: 5rem;
+  box-sizing: border-box; /* se não tivesse border-box, ele ia somar o height com o padding ficando 15rem e não 10rem como queremos */
+}
